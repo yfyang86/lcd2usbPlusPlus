@@ -2,6 +2,8 @@
 
 A modern, professional C++ library for controlling LCD2USB devices. This library provides a clean, object-oriented interface for USB LCD displays with comprehensive font management and character animation capabilities.
 
+**Version:** `v-0.1.0` · **Author:** Yifan Yang · **License:** MIT OR Apache-2.0 · [中文版 README](README-cn.md)
+
 ## 🚀 Features
 
 - 🖥️ **Full LCD Control**: Text display, cursor positioning, screen management
@@ -857,6 +859,10 @@ These ship with or are linked by the project and keep their own licenses:
 - Compatible character LCD display
 
 ## 🔍 Version History
+
+- **v-0.1.0**: first public release (git tag `v-0.1.0`)
+  - RsTask kanban board example, MIT OR Apache-2.0 dual license, personal
+    showcase assets excluded, cross-platform temp-file ignores
 
 - **v1.2.0**: RsTask kanban board example
   - Live kanban board from RsTask workspaces via the `rstasks` CLI
