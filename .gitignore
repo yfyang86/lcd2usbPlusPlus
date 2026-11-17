@@ -3,6 +3,22 @@ build/
 
 # macOS
 .DS_Store
+._*                 # AppleDouble metadata on non-native volumes
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temp / backup / lock files
+*~
+*.tmp
+*.temp
+~$*                 # Office lock files
 
 # RsTask workspace data (runtime, per machine)
 .rstask/
