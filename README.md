@@ -813,7 +813,35 @@ Contributions are welcome! Areas for enhancement:
 
 ## 📄 License
 
-This project is compatible with the original LCD2USB project licensing terms.
+Licensed under either of
+
+- Apache License, Version 2.0 ([LICENSE-Apache-2.0](LICENSE-Apache-2.0))
+- MIT License ([LICENSE-MIT](LICENSE-MIT))
+
+at your option (i.e. `MIT OR Apache-2.0`).
+
+### Licensing rationale
+
+Although this library drives LCD2USB devices, it contains no code from the
+original LCD2USB project's host tools (whose firmware and utilities are GPL):
+the USB identifiers and command codes in `include/lcd2usb/lcd2usb.hpp` are
+functional hardware-interface definitions, and every implementation file here
+is an original C++ design. Interoperating with a device over its documented
+USB protocol does not make the host program a derived work of the device's
+firmware, so the code is offered under permissive terms instead. Thanks to
+Till Harbaum for the LCD2USB hardware design and protocol this library speaks.
+
+### Third-party components
+
+These ship with or are linked by the project and keep their own licenses:
+
+- `assets/ChillBitmap7x.ttf` — SIL Open Font License 1.1
+- `assets/boutique7x7.glyphs`, `fonts/uni668E_.glif` — derived glyph data,
+  under the terms of their respective source fonts
+- [giflib](https://sourceforge.net/projects/giflib/) — MIT-style license (GIF example)
+- [FreeType](https://freetype.org/) — FTL / GPL-2.0 with font exception (UTF-8 pipeline)
+- [ncurses](https://invisible-island.net/ncurses/) — MIT-style license (GIF example UI)
+- [libusb / libusb-compat](https://libusb.info/) — LGPL-2.1, dynamically linked
 
 ## 🎯 Hardware Compatibility
 
@@ -834,6 +862,10 @@ This project is compatible with the original LCD2USB project licensing terms.
   - Per-task CGRAM identicon icons with lane-aware footer patterns
   - Horse-racing marquee details mode (rows that fit stay static)
   - Configurable display geometry and minute-scale refresh scheduling
+
+- **v1.2.0 (legal)**: dual-licensed under MIT OR Apache-2.0
+  - LICENSE-MIT and LICENSE-Apache-2.0 added; rationale and third-party
+    notices (font OFL, giflib, FreeType, ncurses, libusb LGPL) in README
 
 - **v1.1.0**: Image and animation support
   - BMP image viewer with flexible grids
