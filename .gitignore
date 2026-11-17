@@ -1,0 +1,12 @@
+# CMake build artifacts
+build/
+
+# macOS
+.DS_Store
+
+# RsTask workspace data (runtime, per machine)
+.rstask/
+
+# Python
+__pycache__/
+*.pyc

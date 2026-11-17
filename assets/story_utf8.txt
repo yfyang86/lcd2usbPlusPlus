@@ -1,0 +1,12 @@
+The LCD2USB Story
+
+Hello! Welcome to the UTF-8 storyteller.
+This is a small LCD with only sixteen CGRAM slots, but eight of them are special.
+
+Now for Chinese: 你好世界。 这是一个 中文故事 的演示。 Isn't that cool?
+
+The font used is ChillBitmap 7x. It covers many languages. 日本語 も 読める はず です.
+
+Français: le café est très bon aujourd'hui. Espanol: la piña es deliciosa.
+
+End of story.
