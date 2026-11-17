@@ -54,14 +54,15 @@ lcd2usb++/
 │   ├── system_monitor.cpp     # System stats display
 │   └── CMakeLists.txt         # Examples build config
 ├── assets/                     # Demo files
-│   ├── story.txt              # Sample text for storyteller
-│   ├── demo1.bmp              # Sample BMP image
-│   ├── Bad-Apple.gif          # Sample GIF animation
-│   └── *.md                   # Additional text files
+│   ├── ChillBitmap7x.ttf      # OFL bitmap font (UTF-8 demos)
+│   ├── boutique7x7.glyphs     # Pre-baked glyph pack (ufo_to_glyphs.py)
+│   └── story_utf8.txt         # Sample multi-language story
 ├── cmake/                      # CMake configuration
 │   └── lcd2usbConfig.cmake.in
 └── trunc/                      # Archive of old code
 ```
+
+Showcase media and long-form sample texts (e.g. `cc.bmp`, `cc.gif`, `lr-book2.md`) are personal local files: they are git-ignored and not part of the repository — supply your own via `--file` or the image viewers' file arguments.
 
 ## 🛠️ Prerequisites
 

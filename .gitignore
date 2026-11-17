@@ -10,3 +10,8 @@ build/
 # Python
 __pycache__/
 *.pyc
+
+# Personal showcase assets (kept locally, not distributed)
+assets/cc.bmp
+assets/cc.gif
+assets/lr-book2.md
