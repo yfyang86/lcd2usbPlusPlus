@@ -4,6 +4,18 @@ A modern, professional C++ library for controlling LCD2USB devices. This library
 
 **Version:** `v-0.1.0` · **Author:** Yifan Yang · **License:** MIT OR Apache-2.0 · [中文版 README](README-cn.md)
 
+## 🎬 Showcase
+
+Real LCD2USB hardware in action. The demo videos are muted (no soundtrack) — click a preview to watch the full-quality MP4:
+
+**RsTask kanban board** — `lcd_rstasks_kanban --details` on a 20×4 LCD, horse-racing task lanes (see [example 8](#8-rstask-kanban-board-exampleslcd-rstasks-kanbancpp)):
+
+[![RsTask kanban board demo](artifact/Task-Racing.gif)](artifact/Task-Racing.mp4)
+
+**Bad Apple!!** — `gif_to_lcd_demo` on a 20×4 LCD (full video 3:17; see [example 7](#7-animated-gif-player-examplesgif_to_lcd_democpp)):
+
+[![Bad Apple!! on the LCD](artifact/Animation-BadApple.gif)](artifact/Animation-BadApple.mp4)
+
 ## 🚀 Features
 
 - 🖥️ **Full LCD Control**: Text display, cursor positioning, screen management
@@ -59,6 +71,7 @@ lcd2usb++/
 │   ├── ChillBitmap7x.ttf      # OFL bitmap font (UTF-8 demos)
 │   ├── boutique7x7.glyphs     # Pre-baked glyph pack (ufo_to_glyphs.py)
 │   └── story_utf8.txt         # Sample multi-language story
+├── artifact/                   # Demo videos (muted): kanban + GIF player
 ├── cmake/                      # CMake configuration
 │   └── lcd2usbConfig.cmake.in
 └── trunc/                      # Archive of old code
@@ -443,6 +456,8 @@ Options:
 - Graceful Ctrl+C handling
 - ncurses-based status display (clean terminal UI)
 
+🎬 [Watch it run](artifact/Animation-BadApple.mp4) (muted, 3:17) — Bad Apple!! on a real 20×4 LCD.
+
 **Command Line Options**:
 ```bash
 ./gif_to_lcd_demo [options] <gif_file>
@@ -511,6 +526,8 @@ Options:
   - 4-row displays dedicate one row per lane (WORK | REVIEW | QUEUE) and marquee each lane's tasks horizontally, icons riding along
 - Board data refreshes every `--duration` minutes; the animation runs on its own ~4 fps clock between refreshes
 - `--dry-run` console preview (icons shown as `#`), `--once` renders a single frame, clean SIGINT/SIGTERM shutdown
+
+🎬 [Watch it run](artifact/Task-Racing.mp4) (muted, 0:07) — kanban lanes in horse-racing mode on a real 20×4 LCD.
 
 **Command Line Options**:
 ```bash

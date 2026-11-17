@@ -4,6 +4,18 @@
 
 **版本：** `v-0.1.0` · **作者：** Yifan Yang · **许可证：** MIT OR Apache-2.0 · [English README](README.md)
 
+## 🎬 演示
+
+真实 LCD2USB 硬件实拍。演示视频均为无声（无音轨）——点击预览即可观看完整 MP4：
+
+**RsTask 看板** —— 20×4 LCD 上运行 `lcd_rstasks_kanban --details`，任务泳道跑马灯滚动（见「示例 8」）：
+
+[![RsTask 看板演示](artifact/Task-Racing.gif)](artifact/Task-Racing.mp4)
+
+**Bad Apple!!** —— 20×4 LCD 上运行 `gif_to_lcd_demo`（完整视频 3:17；见「示例 7」）：
+
+[![LCD 上播放 Bad Apple!!](artifact/Animation-BadApple.gif)](artifact/Animation-BadApple.mp4)
+
 ## 🚀 功能特性
 
 - 🖥️ **完整的 LCD 控制**：文本显示、光标定位、屏幕管理
@@ -58,6 +70,7 @@ lcd2usb++/
 │   ├── ChillBitmap7x.ttf      # OFL 位图字体（UTF-8 示例用）
 │   ├── boutique7x7.glyphs     # 预打包字形文件
 │   └── story_utf8.txt         # 多语言示例故事
+├── artifact/                   # 演示视频（无声）：看板 + GIF 播放器
 ├── cmake/                      # CMake 配置
 │   └── lcd2usbConfig.cmake.in
 └── trunc/                      # 旧代码存档
@@ -371,6 +384,8 @@ Options:
 - 帧数限制与循环控制
 - Ctrl+C 优雅退出
 
+🎬 [实拍视频](artifact/Animation-BadApple.mp4)（无声，3:17）—— 真实 20×4 LCD 上播放 Bad Apple!!。
+
 **命令行选项**：
 ```bash
 ./gif_to_lcd_demo [options] <gif_file>
@@ -400,6 +415,8 @@ Options:
   - 4 行显示屏每行一个泳道（WORK | REVIEW | QUEUE），任务横向走马灯，图标随文字一起滚动
 - 看板数据每 `--duration` 分钟刷新；动画在两次刷新之间以约 4 fps 运行
 - `--dry-run` 终端预览（图标显示为 `#`），`--once` 渲染单帧，SIGINT/SIGTERM 优雅退出
+
+🎬 [实拍视频](artifact/Task-Racing.mp4)（无声，0:07）—— 真实 20×4 LCD 上的跑马灯任务泳道。
 
 **命令行选项**：
 ```bash
